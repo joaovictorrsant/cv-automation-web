@@ -1,0 +1,75 @@
+.lessons-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.lesson-card {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.lesson-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.3);
+}
+
+.lesson-card img.lesson-thumb {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+
+.lesson-info {
+  padding: 1rem;
+}
+
+.lesson-info h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+}
+
+.lesson-info p {
+  font-size: 0.85rem;
+  opacity: 0.8;
+  margin: 0 0 0.5rem 0;
+}
+
+.status {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #c084fc;
+}
+
+.lesson-card.watched {
+  border: 2px solid #22c55e;
+  opacity: 70%;
+}
+
+.lessons-section {
+  margin-top: 3rem;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.lessons-section h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.selected-lesson {
+  margin-top: 2rem;
+  padding: 1rem 1.5rem;
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 12px;
+  text-align: center;
+}
